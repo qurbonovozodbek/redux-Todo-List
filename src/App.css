@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: linear-gradient(to left, rgb(4, 105, 100), rgba(255, 255, 255));
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    color: rgb(4, 105, 100);
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(4, 105, 100);
+    border-radius: 15px;
+    outline: none;
+}
+.input-btn {
+    padding: 10px 30px;
+    border: 1px solid rgb(4, 105, 100);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(4, 105, 100);
+    transition: all 0.2s ease-in-out;
+}
+.input-btn:hover {
+    background: rgb(4, 105, 100);
+    color: #fff;
+}
+.input-btn:active {
+    transform: translateY(2px);
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: linear-gradient(to left, rgb(4, 105, 100), rgb(38, 186, 220));
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+h3 {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.info button {
+    border: none;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(4, 105, 100);
+    transition: all 0.2s ease-in-out;
+}
+.info button:hover {
+    background: rgb(255, 84, 84);
+    color: #fff;
+}
+.info button:active {
+    transform: translateY(2px);
+}
