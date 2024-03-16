@@ -5,14 +5,14 @@
     font-family: sans-serif;
 }
 body {
-    background: linear-gradient(to left, rgb(4, 105, 100), rgba(255, 255, 255));
+    background: linear-gradient(to left, rgb(4, 95, 105), rgb(138, 10, 10));
 }
 .container {
     width: 600px;
     margin: 0 auto;
     margin-top: 150px;
     padding: 40px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -20,7 +20,7 @@ body {
 h1 {
     font-size: 38px;
     text-align: center;
-    color: rgb(4, 105, 100);
+    color: rgb(138, 10, 10);
     margin-bottom: 30px;
 }
 form {
@@ -32,21 +32,21 @@ form {
 input {
     width: 100%;
     padding: 10px;
-    border: 1px solid rgb(4, 105, 100);
+    border: 1px solid rgb(138, 10, 10);
     border-radius: 15px;
     outline: none;
 }
 .input-btn {
     padding: 10px 30px;
-    border: 1px solid rgb(4, 105, 100);
+    border: 1px solid rgb(138, 10, 10);
     border-radius: 15px;
     outline: none;
     cursor: pointer;
-    color: rgb(4, 105, 100);
+    color: rgb(138, 10, 10);
     transition: all 0.2s ease-in-out;
 }
 .input-btn:hover {
-    background: rgb(4, 105, 100);
+    background: rgb(138, 10, 10);
     color: #fff;
 }
 .input-btn:active {
@@ -57,7 +57,7 @@ input {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    background: linear-gradient(to left, rgb(4, 105, 100), rgb(38, 186, 220));
+    background: linear-gradient(to left, rgb(52, 159, 171), rgb(176, 42, 42));
     padding: 8px 20px;
     border-radius: 15px;
 }
@@ -72,11 +72,12 @@ h3 {
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 5px;
-    color: rgb(4, 105, 100);
+    color: rgb(176, 42, 42);
     transition: all 0.2s ease-in-out;
+    margin-left: 8px;
 }
 .info button:hover {
-    background: rgb(255, 84, 84);
+    background: rgb(176, 42, 42);
     color: #fff;
 }
 .info button:active {

@@ -1,20 +1,27 @@
 const defaultState = {
-    todo: []
-}
-
-export function counterReducer(state=defaultState, actions) {
-    if (actions.type === 'ADD') {
-        let copied = JSON.parse(JSON.stringify(state.todo))
-        copied.push(actions.payload)
-        return {...state, todo: copied}
-    } else if (actions.type === 'DELETE') {
-        let copied = JSON.parse(JSON.stringify(state.todo))
-        copied = copied.filter(el => {
-            return el.id != actions.payload
-        })
-        return {...state, todo: copied}
-    } else {
+    todo: [],
+  };
+  
+  export function counterReducer(state = defaultState, action) {
+    switch (action.type) {
+      case "ADD":
+        return {
+          ...state,
+          todo: [...state.todo, action.payload],
+        };
+      case "DELETE":
+        return {
+          ...state,
+          todo: state.todo.filter((el) => el.id !== action.payload),
+        };
+      case "EDIT":
+        return {
+          ...state,
+          todo: state.todo.map((el) =>
+            el.id === action.payload.id ? { ...el, ...action.payload } : el
+          ),
+        };
+      default:
         return state;
     }
-    
-}
+  }
